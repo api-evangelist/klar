@@ -1,21 +1,62 @@
 aid: klar
 name: Klar
-description: 'Klar is a company surfaced as a portfolio company of prosus-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the enrichment
-  pipeline.'
+type: Index
+description: >-
+  Klar is a Mexican digital financial services platform (neobank) headquartered
+  in Mexico City with engineering in Berlin, serving roughly 7 million customers.
+  Regulated by Mexico's CNBV, Klar offers a deposit account with yield, a
+  no-annual-fee credit card, a secured (garantizada) credit card, the metal
+  Platino card, personal loans, investment products, and Chubb-underwritten life
+  and fraud insurance, plus cashback and interest-free-months (MSI) benefits. It
+  also runs Klar Empresarial for business customers, partnered with Uber to
+  launch the Uber Card in Mexico, and announced the acquisition of mortgage
+  fintech Yave. Klar's product surface is delivered entirely through its consumer
+  mobile app and website; as of this profile Klar publishes NO public developer
+  portal, API reference, SDKs, or sandbox, and no OpenAPI, AsyncAPI, or webhook
+  surface could be found. Third-party access to Klar accounts is generally
+  brokered through Latin American open-finance aggregators (Belvo, Pluggy, Plaid)
+  rather than a first-party Klar API. Klar does operate a public GitHub
+  organization (klar-mx), but its repositories are internal infrastructure and
+  DevOps tooling and forks, not client libraries for a Klar API.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/klar.png
+access: Private
+position: Consumer-App
 url: https://raw.githubusercontent.com/api-evangelist/klar/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - prosus-ventures
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: no-public-api
+x-tier-reason: >-
+  Consumer neobank with no public developer program. Enrichment pass 2026-07-19
+  probed klar.mx, developer/docs/api subdomains, /llms.txt, /.well-known/*, the
+  klar-mx GitHub organization, and open-banking trackers; no API surface exists
+  to catalog. Identity and domain-security artifacts only.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Fintech
+- Neobank
+- Banking
+- Credit Cards
+- Consumer Lending
+- Investments
+- Insurance
+- Mexico
+- Latin America
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +64,34 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/klar-domain-security.yml
+- type: WellKnown
+  url: well-known/klar-well-known.yml
 - type: Website
   url: https://klar.mx
+- type: SignUp
+  url: https://signup.klar.mx
+- type: Support
+  url: https://klar.mx/contacta-a-klar
+- type: HelpCenter
+  url: https://klar.mx/soporte-faq
+- type: TermsOfService
+  url: https://klar.mx/klar-legal
+- type: PrivacyPolicy
+  url: https://klar.mx/aviso-de-privacidad
+- type: GitHubOrganization
+  url: https://github.com/klar-mx
+- type: PressRoom
+  url: https://klar.mx/sala-de-prensa
+- type: Careers
+  url: https://klar.mx/bolsa-de-trabajo
+- type: SecurityOverview
+  url: https://klar.mx/seguridad
+- type: LLMsTxt
+  url: llms/klar-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
