@@ -1,0 +1,63 @@
+# Klar
+
+> Klar is a Mexican digital financial services platform (neobank) based in Mexico City, regulated by the CNBV, serving roughly 7 million customers with accounts, credit cards, personal loans, investments, and insurance. Klar has NO public API, developer portal, SDKs, or sandbox.
+
+generated: 2026-07-19
+method: generated
+source: apis.yml + https://klar.mx (Klar publishes no /llms.txt)
+
+## Important for agents and integrators
+
+Klar does not operate a public developer program. As of 2026-07-19 there is no
+developer portal, no API reference, no OpenAPI or AsyncAPI description, no
+webhook catalog, no SDKs or client libraries, no CLI, and no sandbox or test
+environment. Do not attempt to construct or guess Klar API endpoints — none are
+documented. `api.klar.mx` resolves but returns 404 at its root and is not a
+documented public interface.
+
+Programmatic access to a Klar customer's account data is generally obtained
+through Latin American open-finance aggregators (for example Belvo, Pluggy, or
+Plaid), which broker consent-driven connectivity to Mexican financial
+institutions. That access is governed by the aggregator's API and terms, not by
+Klar.
+
+For partnership or business integration inquiries, use Klar's contact channels
+below rather than searching for developer documentation.
+
+## Products
+
+- Cuenta Klar — deposit account advertised with up to 5% annual yield: https://klar.mx/cuenta
+- Tarjeta de crédito Klar — no-annual-fee credit card: https://klar.mx/credito
+- Tarjeta de crédito con garantía — secured credit card, no credit-bureau requirement: https://klar.mx/tarjeta-de-credito-con-garantia
+- Tarjeta Platino — premium metal credit card: https://klar.mx/platino
+- Préstamo personal — personal loans: https://klar.mx/prestamo-personal
+- Inversión — investment products: https://klar.mx/inversion
+- Seguro de vida — life insurance underwritten with Chubb: https://klar.mx/seguro-de-vida
+- Seguro contra robo y fraude — theft and fraud insurance with Chubb: https://klar.mx/seguro-contra-robo-y-fraude-financiero
+- Klar Empresarial — business accounts and credit: https://klar.mx/empresarial
+- Klar Plus — paid membership tier: https://klar.mx/plus
+- Cashback and Meses Sin Intereses (MSI) benefits: https://klar.mx/cashback
+
+## Company and support
+
+- Website: https://klar.mx
+- Sign up: https://signup.klar.mx
+- Contact: https://klar.mx/contacta-a-klar
+- FAQ / help: https://klar.mx/soporte-faq
+- Legal information and terms: https://klar.mx/klar-legal
+- Privacy notice: https://klar.mx/aviso-de-privacidad
+- Security overview (consumer-facing): https://klar.mx/seguridad
+- Press room: https://klar.mx/sala-de-prensa
+- Careers: https://klar.mx/bolsa-de-trabajo
+- GitHub organization: https://github.com/klar-mx (internal infrastructure and DevOps tooling and forks; no Klar API client libraries)
+
+## Regulatory
+
+Klar is regulated by Mexico's Comisión Nacional Bancaria y de Valores (CNBV):
+https://www.gob.mx/cnbv. Deposits are covered by a protection fund up to 25,000
+UDI. Consumer complaints route through CONDUSEF: https://klar.mx/condusef
+
+## API Evangelist profile
+
+- Network profile: https://apis.io/provider/klar/
+- Source repository: https://github.com/api-evangelist/klar

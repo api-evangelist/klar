@@ -1,0 +1,44 @@
+generated: '2026-07-19'
+method: probed
+source: https://klar.mx
+name: Klar well-known probe
+description: >-
+  Probe of standard /.well-known/ discovery paths on Klar's public hosts. No
+  path returned 200; absence is recorded as valid data. No raw files saved.
+hosts:
+- host: klar.mx
+  paths:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /llms.txt
+    status: 404
+    file: null
+subdomains_probed:
+- host: developer.klar.mx
+  resolves: false
+- host: developers.klar.mx
+  resolves: false
+- host: docs.klar.mx
+  resolves: false
+- host: api.klar.mx
+  resolves: true
+  status: 404
+  note: Host resolves and terminates TLS but returns 404 at root; no public API documented.
+summary: >-
+  Klar publishes no well-known discovery documents, no security.txt, and no
+  llms.txt. No OAuth/OIDC authorization-server metadata is exposed publicly,
+  consistent with a consumer-app-only surface with no third-party developer
+  program.
