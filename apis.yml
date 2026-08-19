@@ -43,7 +43,7 @@ x-tier-reason: >-
   probed klar.mx, developer/docs/api subdomains, /llms.txt, /.well-known/*, the
   klar-mx GitHub organization, and open-banking trackers; no API surface exists
   to catalog. Identity and domain-security artifacts only.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
