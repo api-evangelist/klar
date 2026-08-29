@@ -18,6 +18,17 @@ description: >-
   rather than a first-party Klar API. Klar does operate a public GitHub
   organization (klar-mx), but its repositories are internal infrastructure and
   DevOps tooling and forks, not client libraries for a Klar API.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
