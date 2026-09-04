@@ -42,7 +42,7 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/klar.png
 access: Private
-position: Consumer-App
+position: Consuming
 url: https://raw.githubusercontent.com/api-evangelist/klar/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
